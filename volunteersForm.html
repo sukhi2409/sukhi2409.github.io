@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>VOLUNTEER FORM</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="volunteer.css">
+        <link rel="icon" href="images/logo.jpg">
+      
+      
+        <!--PLUGIN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      
+      
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+      
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fredoka+One&family=Kanit:wght@300&display=swap"
+          rel="stylesheet">
+      </head>
+
+     
+
+<body>
+
+
+    <!--HEADER PART-->
+    <header class="header">
+        <img itemprop="logo" src="https://49f75a907f3de7cc2849-8c383cd99e3434faa5a413cd61284364.ssl.cf1.rackcdn.com/1587472542667logo.png" style="width: 90px;" alt="logo">
+        <nav class="navbar">
+            
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="index.html">OUR SERVICES</a></li>
+                <li><a href="donate.html">DONATE</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="volunteers.html">VOLUNTEERS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <!-- <li><a href="htdocs/account.html" class="user"><i class="uil uil-user"></i> Login</a></li> -->
+            </ul>
+        </nav>
+        <div class="fas fa-bars"></div>
+        
+    </header>
+      
+      <br><br><br><br> 
+
+
+<h1 style="color: #188508;">VOLUNTEER FORM</h1>
+
+  <form action="javascript:sendmail()" method="post">
+
+    <div class="contentform">
+      <div id="sendmessage"> Your message has been sent successfully. Thank you. </div>
+
+
+      <div class="leftcontact">
+        
+
+        <div class="form-group">
+          <p>Name <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-user" style="font-size: 25px; padding-top: 20%;"></i></span>
+          <input type="text" name="prenom" id="Name" data-rule="required"
+            data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné." />
+          <div class="validation"></div>
+        </div>
+
+        <div class="form-group">
+          <p>E-mail <span>*</span></p>
+          <span class="icon-case"><i class="fas fa-envelope" style="font-size: 25px; padding-top: 20%;"></i></span>
+          <input type="email" name="email" id="email" data-rule="email"
+            data-msg="Vérifiez votre saisie sur les champs : Le champ 'E-mail' est obligatoire." />
+          <div class="validation"></div>
+        </div>
+
+
+        <div class="form-group">
+          <p>Address <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-location-arrow" style="font-size: 25px; padding-top: 20%;"></i></span>
+          <input type="text" name="adresse" id="address" data-rule="required"
+            data-msg="Vérifiez votre saisie sur les champs : Le champ 'Adresse' doit être renseigné." />
+          <div class="validation"></div>
+        </div>
+
+        <div class="form-group">
+          <p>Tell us about Yourself..<span>*</span></p>
+          <span class="icon-case"><i class="fas fa-user-edit" style="font-size: 25px; padding-top: 20%;"></i></span>
+          <textarea type="text" name="postal" id="data1" data-rule="required"></textarea>
+          <div class="validation"></div>
+        </div>
+
+
+
+      </div>
+
+      <div class="rightcontact">
+
+
+        <div class="form-group">
+          <p>Phone number <span>*</span></p>
+          <span class="icon-case"><i class="fa fa-phone" style="font-size: 25px; padding-top: 20%;"></i></span>
+          <input type="text" name="phone" id="number" data-rule="maxlen:10"
+            data-msg="Vérifiez votre saisie sur les champs : Le champ 'Téléphone' doit être renseigné. Minimum 10 chiffres" />
+          <div class="validation"></div>
+        </div>
+
+
+        <div class="form-group">
+          <p>What skills can you bring to WSA?<span>*</span></p>
+          <span class="icon-case"><i class="fas fa-comment" style="font-size: 25px; padding-top: 20%;"></i></span>
+          <textarea type="text" name="sujet" id="skills" data-rule="required"></textarea>
+          <div class="validation"></div>
+        </div>
+
+        <div class="form-group">
+          <p>What You Can do for us?<span>*</span></p>
+          <span class="icon-case"><i class="fas fa-comments" style="font-size: 25px; padding-top: 20%;"></i></span>
+          <textarea id="data2" name="message" rows="14" data-rule="required"></textarea>
+          <div class="validation"></div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="bouton-contact" style="background-image: linear-gradient(315deg, #043408 0%, #188508 74%);">Send</button>
+
+   
+  </form>
+
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+			var name = $('#Name').val();
+			var email = $('#email').val();
+			var number = $('#number').val();
+            var skills = $('#skills').val();
+            var address = $('#address').val();
+            var data1 = $('#data1').val();
+            var data2 = $('#data2').val();
+
+
+			var Body='Name: '+' '+name+'<br>Email: '+' '+email+'<br>Contact No.: '+' '+number+'<br>Skills: '+' '+skills+'<br>Address: '+' '+address+'<br>Tell us About Yourself: '+' '+data1+'<br>What you can do for us?: '+' '+data2;
+
+			Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "deveshk979@gmail.com",
+        Password : "C554DE4A1CD1E60A9D48D9C82C8815D95790",
+        From: "deveshk979@gmail.com",
+				To: "sukhi.m2409@gmail.com",
+				Subject: "New message on Volunteers from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					
+					if(message=='OK'){
+					alert('Your form has been submitted. Thank you for contacting us.');
+					}
+					else{
+						console.error (message);
+						alert(message)
+						
+					}
+
+				}
+			);
+
+
+
+		}
+
+ </script>
+
+
+    <!-- Bottom Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>HOURS OF OPERATION</h4>
+                    <ul>
+                        <li>At the shelter, staff members are in the office and available most weekdays.</li>
+                        <li><B>MONDAY - FRIDAY </B></li>
+                        <li><B>10:00AM - 05:00PM</B></li>
+                        
+                    </ul> 
+                </div>
+                <div class="footer-col">
+                    <h4>ADDRESS</h4>
+                    <ul>
+                        <li>Sy.No. 18/2, K. Chudahalli, Somanahalli Post, Near Guhantara Resort & KMS Farm, Uttarahalli Hobli,Kanakapura Main Road, Bangalore - 560 082</li>
+                        <li><B>EMAIL</B> - wsatrustindia@gmail.com</li>
+                        <li><B>RESCUE LINE</B>  - +91-9632300046</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FOLLOW US</h4>
+                    <div class="social-links">
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=100064329866728&hc_ref=ARQ7vjLG3HV5adfBbiHtF6yOfhxAc-vHyBR6IC_l3cnIDUFiVYrMWs55MWhjJnGKdKw"><i class="fab fa-facebook-f" ></i></a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCoe7IQVULtg7o59XiWgIBSg"><i class="fab fa-youtube-square"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/we__save__animals/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://goo.gl/maps/NAse5Kqt7tUAx3KD9"><i class="fa fa-map-marker"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
